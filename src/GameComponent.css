@@ -1,0 +1,106 @@
+.gameContainer {
+   background-color: #393f6e;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 0 180px;
+   height: 530px;
+   border-radius: 15px;
+}
+.questionNumbersDiv {
+   display: flex;
+   gap: 20px;
+}
+.questionNumbers {
+   background-color: #343964;
+   border-radius: 1111111111px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 3.5rem;
+   height: 3.5rem;
+}
+.answersDiv {
+   display: flex;
+   gap: 25px;
+}
+.leftAnswers {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+}
+.rightAnswers {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 25px;
+}
+.rightAnswers button {
+   background-color: #343964da;
+   width: 18rem;
+   padding: 15px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 18px;
+   cursor: pointer;
+   transition-duration: 2s;
+}
+.leftAnswers button,
+.rightAnswers button {
+   background-color: #343964ce;
+   width: 18rem;
+   padding: 15px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 18px;
+   cursor: pointer;
+   display: flex;
+   gap: 15px;
+}
+
+.leftAnswers button:hover,
+.rightAnswers button:hover {
+   background: linear-gradient(#e65895, #bc6be8);
+   outline: none;
+   transition-duration: 1s;
+}
+
+.resultContainer {
+   background-color: #393f6e;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 0 100px;
+   height: 530px;
+   border-radius: 15px;
+}
+.welcomePage {
+   text-align: center;
+   background-color: #393f6e;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 110px;
+   align-items: center;
+   padding: 0 100px;
+   height: 530px;
+   border-radius: 15px;
+}
+.waitingContainer {
+   text-align: center;
+   background-color: #ff000000;
+   color: #D1BFA8;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 110px;
+   align-items: center;
+   padding: 0 100px;
+   height: 530px;
+   border-radius: 15px;
+}
