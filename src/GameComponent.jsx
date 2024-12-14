@@ -48,9 +48,9 @@ export default function GameCompo() {
    useEffect(() => {
       setCorrectAnswer(questions[Math.floor(Math.random() * 4)]);
    }, [questions]);
-   useEffect(() => {
-      console.log(correctAnswer);
-   }, [correctAnswer]);
+   // useEffect(() => {
+   //    console.log(correctAnswer);
+   // }, [correctAnswer]);
    // useEffect(() => {
    //    set;
    // });
@@ -59,7 +59,7 @@ export default function GameCompo() {
       setQuestions([countryChoices1, countryChoices2, countryChoices3, countryChoices4]);
    }, [countryChoices1, countryChoices2, countryChoices3, countryChoices4]);
    useEffect(() => {
-      console.log(correctAnswer);
+      // console.log(correctAnswer);
       return () => {};
    }, [correctAnswer, countryChoices1, countryChoices2, countryChoices3, countryChoices4]);
    useEffect(() => {});
@@ -90,11 +90,11 @@ export default function GameCompo() {
       let countryChoice = correctAnswer[0].country;
 
       if (ChoiceVal == countryChoice) {
-         console.log("right answer");
+         // console.log("right answer");
          setAnswersRes(answersRes + 1);
          setAnswerCheck(true);
       } else {
-         console.log("wrong answer");
+         // console.log("wrong answer");
       }
       setTimeout(() => {
          setQuestionNumber(questionNumber + 1);
@@ -188,7 +188,7 @@ export default function GameCompo() {
             <button
                onClick={() => {
                   setId(correctAnswer[0].id);
-                  console.log(buttonChoice1.id, Id);
+                  // console.log(buttonChoice1.id, Id);
                   buttonChoiceClicked(buttonChoice1.value);
                   if (questionNumber < 10) {
                      setPageStatus("loading");
@@ -221,7 +221,7 @@ export default function GameCompo() {
             <button
                onClick={() => {
                   setId(buttonChoice2.id);
-                  console.log(buttonChoice2.id, Id);
+                  // console.log(buttonChoice2.id, Id);
                   buttonChoiceClicked(buttonChoice2.value);
                   if (questionNumber < 10) {
                      setPageStatus("loading");

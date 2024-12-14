@@ -23,9 +23,9 @@ function App() {
       axios.get("https://restcountries.com/v3.1/all").then(function (response) {
          setApiOutput(response.data);
          countriesNames[0].firstCountry = response.data[0].name.common;
-         console.log(response.data[0].name.common);
+         // console.log(response.data[0].name.common);
          countriesNames[0].secondCountry = response.data[0].flags.svg;
-         console.log(response.data[0].flags.svg);
+         // console.log(response.data[0].flags.svg);
       });
    }, []);
 
