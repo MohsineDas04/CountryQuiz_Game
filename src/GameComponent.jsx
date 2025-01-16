@@ -1,18 +1,22 @@
 import { useEffect, useState } from "react";
 import { PiHandWavingLight } from "react-icons/pi";
+import rightIcon from "./assets/right.svg";
+import falseIcon from "./assets/false.svg";
 import congratsIcon from "./assets/congrats.svg";
 import "./GameComponent.css";
 import { useContext } from "react";
 import { countriesContext } from "./CountriesContext/CountiesContext";
 import { HashLoader } from "react-spinners";
+import { MdWidthFull } from "react-icons/md";
 export default function GameCompo() {
    const [pageStatus, setPageStatus] = useState();
    const ApiRes = useContext(countriesContext);
    const [status, setStatus] = useState("notStartedyet");
-
+   const [Id, setId] = useState();
    const [answersRes, setAnswersRes] = useState(0);
    const [questionNumber, setQuestionNumber] = useState(0);
-
+   const [answerCheck, setAnswerCheck] = useState(false);
+   const [randomQuestion, setRandomQuestion] = useState();
    const [countryChoices1, setCountryChoices1] = useState([{ id: "", country: "", flagImg: "" }]);
    const [countryChoices2, setCountryChoices2] = useState([{ id: "", country: "", flagImg: "" }]);
    const [countryChoices3, setCountryChoices3] = useState([{ id: "", country: "", flagImg: "" }]);
